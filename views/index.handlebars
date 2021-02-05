@@ -1,9 +1,17 @@
 <!doctype html>
 
 <html>
+<div class="container">
 <head>
+
 	<title>My HCI Friends</title>	
+
 	<meta charset="utf-8">
+	<link  href='/css/bootstrap.css'/>
+	<link   href='/css/bootstrap-theme.css'/>
+	
+	<link href='/css/hci-friends.css'/>
+	
 	
 </head>
 
@@ -11,6 +19,10 @@
 	<h1>My HCI Friends</h1>
 
 	<form id="addFriendForm" role="form" method="get" action="/add">
+	<div class="friend">
+		<img id="logo_img" src="friends.png" alt= "Dingus & Widget Logo" >
+
+	</div>
 		<h3>Add a friend</h3>
 	    <div class="form-group">
 	      <label for="name">Name:</label>
@@ -22,5 +34,10 @@
 	    </div>
 	    <input type="submit" id="submitBtn" class="btn btn-default" value="Add the friend"></input>
 	</form>
+	
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/hci-friends.js"></script>
+	<script src="/js/bootstrap.js"></script>
 </body>
+</div>
 </html>
